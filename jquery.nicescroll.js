@@ -1377,6 +1377,7 @@
             }            
             
             self.onselectionstart = function(e) {
+              e.preventDefault();
               if (self.ispage) return;
               self.selectiondrag = self.win.offset();
             };
